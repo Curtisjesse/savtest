@@ -27,5 +27,4 @@ router.register(r'orders', OrderViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
